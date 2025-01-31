@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'im android';
+    src: url("../fontes/idroid.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+Obs: Esta bem ruim para dispositivos moveis.
+*/
+/*
+ #c5ebd6
+ #84e1ad 
+ #3ad07e
+ #1a5c38
+ #2fa866
+*/
+:root {
+    --clogo0: #c5ebd6;
+    --clogo1: #84e1ad;
+    --clogo2: #3ad07e;
+    --clogo3: #1a5c38;
+    --clogo4: #2fa866;
+
+    --fontes-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontes-destaque: "Bebas Neue", cursive;
+    --fontes-android:  'im android', cursive;
+}
+body {
+    font-family: var(--fontes-padrao);
+    margin: 0px;
+    background-color: var(--clogo1);
+}
+article > h1 {
+    font-size: 1.8em;
+    margin: 0px 20px 15px 20px;
+    padding-top: 20px;
+
+}
+header > h1 {
+    font-family: var(--fontes-destaque);
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-top: 0px;
+    padding-top: 20px;
+    
+}
+header {
+    min-height: 180px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.537);
+    background-image: linear-gradient(to bottom, var(--clogo2), var(--clogo3));
+    padding-bottom: 10px;
+}
+header > p {
+    max-width: 400px;
+    
+    margin: 0px auto 25px auto;
+    padding: 0px 10px;
+}
+nav {
+    background-color: var(--clogo3);
+    padding: 10px;
+    margin-bottom: 0px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.504);
+    
+    
+    
+}
+a {
+    margin-left: 5px;
+    text-decoration: none; 
+    font-weight: bold;
+    
+}
+a:hover {
+    text-decoration: underline;
+}
+nav > a {
+    /*
+    margin-top: 5px;
+    */
+    padding: 10px;
+    color: var(--clogo0);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    
+    background-color: var(--clogo0);
+    color: var(--clogo3);
+    
+}
+.titulodoprincipal {
+    color: var(--clogo3);
+    font-family: var(--fontes-android);
+    font-weight: normal;
+}
+h2 {
+    background-image: linear-gradient(to right, var(--clogo0), transparent);
+
+}
+.sobresuahistoria {
+    color: var(--clogo3);
+   background-color:  var(--clogo0);
+}  
+
+.sobresuahistoria::after {
+    content: "\1F4DC";
+}
+
+strong {
+    color: var(--clogo3);
+    
+}
+
+main {
+    background-color: white;
+    /*
+    Não se esqueça de que é assim
+    que ver o maximo da medida em alguns
+     casos.
+    */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.502);
+    max-width: 1000px;
+    min-width: 300px;
+    
+    /*
+    width: 58.4vw;
+    */
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+}
+ 
+/*
+A declaração "main p" esta dizendo 
+que todo elemento (tag) p dentro do
+elemento main (mesmo que se encontre
+ dentro de outros elementos) vai ficar
+ com seu estilo conforme as seguintes 
+ configurações. 
+*/
+
+main p {
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+picture > img {
+    /* 
+    Obs: precisando de um respeitoso espaço,
+    lembre-se de usar as div .
+    */
+    
+    width: 100%;
+    
+}
+
+#fococentralizado {
+    /* 
+    ver como centralizar
+    (Solução:Era só deixa no nivel de bloco.)
+    */
+    display: block;
+    margin: auto;
+    max-width: 300px;
+}
+
+#paravideos {
+    background-color: var(--clogo3);
+    padding: 35px;
+    
+    padding-bottom: 51%;
+    position: relative;
+    
+
+}
+
+iframe {
+    /*
+    max-width: 770px;
+    */
+   /*
+    width: 100%;
+   */
+   
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   width: 90%;
+   height: 90%;
+   
+}
+
+.espacoentreaextremidade {
+   
+    padding: 5px 20px 5px 20px;
+}
+
+aside {
+    background-color: var(--clogo0);
+   margin: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.507);
+
+}
+
+aside > p {
+    margin: 0px;
+    padding: 15px 10px 15px 10px;
+    
+}
+
+ul {
+    padding: 0px 10px;
+    list-style-type: "\002714\0020\0020";
+    list-style-position: inside;
+    columns: 2;
+    
+}
+
+li {
+    text-decoration: underline;
+}
+
+h3 {
+    background-color: var(--clogo4);
+    color: white;
+    font-size: 1.1em;
+    height: 30px;
+    margin: 0px; 
+    padding: 10px 0px 0px 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+footer {
+    background-color: var(--clogo3);
+    text-align: center;
+    padding: 5px 0px;
+}
+
+footer > p {
+    color: white;
+    margin: 0px;
+}
+
+footer > p > a {
+    color: white;
+}
+
