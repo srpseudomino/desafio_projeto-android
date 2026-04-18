@@ -27,8 +27,10 @@ Obs: Esta bem ruim para dispositivos moveis.
     --fontes-destaque: "Bebas Neue", cursive;
     --fontes-android:  'im android', cursive;
 }
+
 body {
     font-family: var(--fontes-padrao);
+    padding: 0px;
     margin: 0px;
     background-color: var(--clogo1);
 }
@@ -51,26 +53,37 @@ header {
     color: white;
     text-align: center;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.537);
-    background-image: linear-gradient(to bottom, var(--clogo2), var(--clogo3));
+    background-color: var(--clogo2);
     padding-bottom: 10px;
 }
 header > p {
     max-width: 400px;
-    
     margin: 0px auto;
     padding: 0px 10px 25px 10px;
 }
-nav {
+menu {
+
+    display: block;
     background-color: var(--clogo3);
-    padding: 10px;
-    margin-bottom: 0px;
+    padding: 0px;
+    margin: 0px;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.504);
     
-    
-    
 }
+
+/*
+nav > span {
+
+    display: block;
+    background-color: var(--clogo1);
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+*/
+
 a {
-    margin-left: 5px;
+    
     text-decoration: none; 
     font-weight: bold;
     
@@ -78,16 +91,16 @@ a {
 a:hover {
     text-decoration: underline;
 }
-nav > a {
-    /*
-    margin-top: 5px;
-    */
-    padding: 10px;
+menu  a {
+    
+    display: block;
     color: var(--clogo0);
-    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
     transition-duration: 0.5s;
 }
-nav > a:hover {
+
+menu a:hover {
     
     background-color: var(--clogo0);
     color: var(--clogo3);
@@ -215,10 +228,12 @@ aside > p {
 }
 
 ul {
+
+    width: 150px;
     padding: 0px 10px;
+    margin: auto;
     list-style-type: "\002714\0020\0020";
     list-style-position: inside;
-    columns: 2;
     
 }
 

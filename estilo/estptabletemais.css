@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+header {
+
+    background-image: linear-gradient(to bottom, var(--clogo2), var(--clogo3));
+}
+
+menu {
+
+    display: block;
+    padding: 10px;
+
+}
+
+
+menu  a {
+
+    display: inline;
+    margin-left: 5px;
+    border-radius: 5px;
+
+}
+
+ul {
+
+    width: calc(100% - 20px);
+    columns: 2;
+
+}
