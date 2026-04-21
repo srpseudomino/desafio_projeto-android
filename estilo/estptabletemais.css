@@ -5,15 +5,10 @@ header {
     background-image: linear-gradient(to bottom, var(--clogo2), var(--clogo3));
 }
 
-.material-symbols-outlined {
 
-    display: none;
-
-}
 
 menu {
 
-    display: block;
     padding: 10px;
 
 }
