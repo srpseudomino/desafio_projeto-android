@@ -5,7 +5,7 @@ header {
     background-image: linear-gradient(to bottom, var(--clogo2), var(--clogo3));
 }
 
-span {
+.material-symbols-outlined {
 
     display: none;
 

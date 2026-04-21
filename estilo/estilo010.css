@@ -62,13 +62,14 @@ header > p {
     padding: 0px 10px 25px 10px;
 }
 
-span {
+.material-symbols-outlined {
 
     display: block;
     background-color: var(--clogo1);
     text-align: center;
     padding-top: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
 
 }
 

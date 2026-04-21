@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio: Site sobre o mascote do Android</title>
     <link rel="shortcut icon" href="imgsandroid/imgfavicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu_open" />
     <link rel="stylesheet" href="estilo/estilo010.css" media="all">
     <link rel="stylesheet" href="estilo/estptabletemais.css" media="screen and (min-width: 768px)">
 </head>
@@ -13,8 +15,8 @@
         <h1>curiosidades de tecnologia</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar.</p>
     </header>
-        <span onclick="mudando()">
-            <img src="imgsandroid/imgfavicon/icone_menu.svg" alt="Icone de menu">
+        <span class="material-symbols-outlined" onclick="mudando()">
+            &#xe5d2;
         </span>
         <menu id="escolhendo">
             <!-- Menu interativo só depois de ver mais a fundo politicas de segurança-->
@@ -112,7 +114,7 @@
         Site criador por Aluno de <a href="https://github.com/gustavoguanabara/" target="_blank" rel="external">Gustavo Guanabara</a> para o <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">CursoemVideo</a>.</p>
     </footer>
     <script>
-        var menuico = window.document.getElementsByTagName("img")[0], opcoes = window.document.getElementById("escolhendo")
+        var menuico = window.document.getElementsByTagName("span")[0], opcoes = window.document.getElementById("escolhendo")
 
         function ajustando() {
 
@@ -125,10 +127,10 @@
 
             if(opcoes.style.diplay == "none") {
                 opcoes.style.display = "block"
-                menuico.src = "imgsandroid/imgfavicon/icone_menu_open.svg"
+                menuico.innerText = "open_menu"
             } else {
                 opcoes.style.display = "none"
-                menuico.src = "imgsandroid/imgfavicon/icone_menu.svg"
+                menuico.innerText = '\u{e5d2}'
             }
 
         }
