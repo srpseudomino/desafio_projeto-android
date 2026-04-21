@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="estilo/estilo010.css" media="all">
     <link rel="stylesheet" href="estilo/estptabletemais.css" media="screen and (min-width: 768px)">
 </head>
-<body>
+<body onresize="ajustando()">
     <header>
         <h1>curiosidades de tecnologia</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar.</p>
     </header>
-        <menu>
+        <span>
+            <img src="imgsandroid/imgfavicon/icone_menu.svg" alt="Icone de menu">
+        </span>
+        <menu id="escolhendo">
             <!-- Menu interativo só depois de ver mais a fundo politicas de segurança-->
             <a href="#">Home</a>
             <a href="#">Notícias</a>
@@ -108,5 +111,28 @@
     <footer><p>
         Site criador por Aluno de <a href="https://github.com/gustavoguanabara/" target="_blank" rel="external">Gustavo Guanabara</a> para o <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">CursoemVideo</a>.</p>
     </footer>
+    <script src="scripts/interaquitive.js">
+        var menuico = window.document.getElementsByTagName("img")[0], opcoes = window.document.getElementById("escolhendo")
+        menuico.addEventListener('click', mudando)
+
+        function ajustando() {
+
+            if(opcoes.style.display == "block" && window.innerWidth < 768) {
+                opcoes.style.display = "none"
+            }
+
+        }
+        function mudando() {
+
+            if(opcoes.style.diplay == "none") {
+                opcoes.style.display = "block"
+                menuico.src = "imgsandroid/imgfavicon/icone_menu_open.svg"
+            } else {
+                opcoes.style.display = "none"
+                menuico.src = "imgsandroid/imgfavicon/icone_menu.svg"
+            }
+
+        }
+    </script>
 </body>
 </html>

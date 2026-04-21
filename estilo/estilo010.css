@@ -61,9 +61,20 @@ header > p {
     margin: 0px auto;
     padding: 0px 10px 25px 10px;
 }
-menu {
+
+span {
 
     display: block;
+    background-color: var(--clogo1);
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+menu {
+
+    display: none;
     background-color: var(--clogo3);
     padding: 0px;
     margin: 0px;
