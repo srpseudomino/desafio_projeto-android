@@ -13,7 +13,7 @@
         <h1>curiosidades de tecnologia</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar.</p>
     </header>
-        <span>
+        <span onclick="mudando()">
             <img src="imgsandroid/imgfavicon/icone_menu.svg" alt="Icone de menu">
         </span>
         <menu id="escolhendo">
@@ -113,11 +113,10 @@
     </footer>
     <script src="scripts/interaquitive.js">
         var menuico = window.document.getElementsByTagName("img")[0], opcoes = window.document.getElementById("escolhendo")
-        menuico.addEventListener('click', mudando)
 
         function ajustando() {
 
-            if(opcoes.style.display == "block" && window.innerWidth < 768) {
+            if(opcoes.style.display == "block" && window.innerWidth <= 768) {
                 opcoes.style.display = "none"
             }
 
